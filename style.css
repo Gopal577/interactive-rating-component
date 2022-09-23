@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: Overpass, "sans-serif";
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --Dark-Grey: hsl(213, 12%, 25%);
+}
+
+html {
+  font-size: 1.6rem;
+}
+
+body {
+  font-size: 1.5em;
+  background-color: var(--Very-Dark-Blue);
+  color: var(--Light-Grey);
+  width: 100%;
+  height: 100vh;
+  padding: 1.25rem;
+  display: grid;
+  justify-content: center;
+}
+
+.card {
+  background: var(--Dark-Blue);
+  padding: 1.5rem;
+  margin: auto;
+  width: 85%;
+  min-width: 25rem;
+  max-width: 30rem;
+  border-radius: .8rem;
+}
+
+.card .rating-card img {
+  background-color: var(--Dark-Grey);
+  width: 3rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  margin: 1rem 0;
+}
+
+.heading {
+  color: var(--White);
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.para {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.btn {
+  font-family: inherit;
+  background-color: var(--Dark-Grey);
+  color: var(--White);
+  text-align: center;
+  font-size: 1.3rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding-top: .3rem;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.btn:focus {
+  background-color: var(--Light-Grey);
+}
+
+.btn:hover {
+  background-color: var(--Orange);
+}
+
+.Submit-btn {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+  color: var(--White);
+  background-color: var(--Orange);
+  border: none;
+  border-radius: 5rem;
+  padding: 0.7rem 0 0.6rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  transition: all .3s ease;
+}
+
+.Submit-btn:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.card .Thank-you-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 1rem; */
+}
+
+.card .Thank-you-card img {
+  display: block;
+  width: 50%;
+  margin: 1.5rem auto;
+}
+
+.static {
+  background-color: var(--Dark-Grey);
+  color: var(--Orange);
+  font-size: 1.3rem;
+  line-height: 2rem;
+  border-radius: 5rem;
+  padding: .8rem 1rem .5rem;
+  margin-bottom: 2.5rem;
+}
+
+.Thank-you-header {
+  color: var(--White);
+  font-size: 2rem;
+}
+
+.card .Thank-you-card .para {
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.attribution {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
